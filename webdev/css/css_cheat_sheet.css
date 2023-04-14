@@ -87,3 +87,39 @@ div {
 #padding {
     padding: 50px;
 }
+
+
+/* overflow */
+#overflow-example {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+    margin: auto;
+}
+
+/* display */
+#display div > p {
+    color: red;
+}
+
+p.para1 {display: none;}
+p.para2 {display: inline;}
+p.para3 {display: block;}
+p.para4 {display: inline-block;}
+
+/* position */
+#position {
+    width: 300px;
+    position: relative;
+    left: 100px;
+    
+                   
+}
+
+/* filter */
+#filter img {
+    display: block;
+    filter: grayscale(100);
+    margin: auto;
+}

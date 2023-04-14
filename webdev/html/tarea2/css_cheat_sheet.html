@@ -173,11 +173,10 @@
             overflow
         </h2>
         <p>
-            La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+            La propiedad de desbordamiento especifica si recortar el contenido o agregar barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en un área específica.
         </p>
-        <p>
-
-        </p>
+        <p>En este ejemplo, creamos un div que tendrá la propiedad overflow con un valor de "scroll":</p>
+        <div id="overflow-example">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
     </div>
 
     <div id="display">
@@ -185,18 +184,72 @@
             display
         </h2>
         <p>
-            La propiedad display establece como se va a tratar un elemento (bloque, inline, flex, grid, etc)
+            La propiedad display especifica el comportamiento de visualización de un elemento.
         </p>
+        <p>
+            En los siguientes ejemplos aplicamos a un párrafo (con el texto "HELLO WORLD!"") dentro de cada div distintos valores de la propiedad display para ver la diferencia.
+        </p>
+        <h2>display: none:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline-block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
     </div>
 
     <div id="position">
         <h2>
             position
         </h2>
+        
+
         <p>
             La propiedad position establece cómo se coloca un elemento en un
            documento. Las propiedades superior, derecha, inferior e izquierda determinan la
-           ubicación final de los elementos posicionados. Hay varios tipos de posición en css (absolute, fixed, relative, etc)
+           ubicación final de los elementos posicionados. Hay varios tipos de posición en css: static, absolute, fixed, relative, sticky.
+        </p>
+
+        <h3>Static</h3>
+        <p>
+            La posición static hace que los elementos se coloquen según el flujo normal del documento HTML, es decir, según estén escritos en el propio código HTML.
+        </p>
+
+        <h3>Relative</h3>
+        <p>
+            La posición relativa nos permite posicionar un elemento a la izquierda, arriba, abajo o derecha, y este posicionamiento es relativo al contenedor parent.
+
+            <b>Para mostrar un ejemplo, este div tiene una posición relativa (left:100px)</b>
+        </p>
+
+        <h3>Absolute</h3>
+        <p>
+            Por otro lado, Los elementos con posicionamiento absoluto no se colocan en función de su lugar habitual en el flujo de documento, sino en función de la posición de su antecesor más cercano.
+
+            Los elementos de posición absoluta se eliminan por completo del flujo regular de la página web.
+        </p>
+
+        <h3>Sticky</h3>
+        <p>
+            Asímismo, El posicionamiento sticky puede considerarse un híbrido de los posicionamientos relativo y fijo. Un elemento con posicionamiento sticky es tratado como un elemento posicionado relativamente hasta que cruza un umbral especificado, en cuyo punto se trata como fijo hasta que alcanza el límite de su padre.
+        </p>
+
+        <h3>Fixed</h3>
+        <p>
+            El posicionamiento fixed por otro lado, hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll. El elemento no conserva su espacio en el flujo del documento.
         </p>
 
     </div>
@@ -206,8 +259,12 @@
             filter
         </h2>
         <p>
-            La propiedad CSS filter dota de efectos gráficos como el desenfoque o cambio de color en la representación antes de que se muestre el elemento. Los filtros se utilizan comúnmente para ajustar la representación de imágenes, fondos o bordes.
+            La propiedad de filtro define efectos visuales (como desenfoque y saturación) para un elemento (a menudo es el elemento img)
         </p>
+        <p>
+            En este div insertamos una imagen con escala de grises utilizando la propiedad filter.
+        </p>
+        <img src="https://i.pinimg.com/736x/28/44/88/284488453f7490e41e7467f4d4aefed2.jpg" alt="imagen de piña con escala de grises" width= 200px height = 200px>
     </div>
 
 </body>
