@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(65, 155, 245);
+  margin: 0;
+  height: 98vh;
+}
+
+.grid-container {
+  margin: 5px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, fr);
+  gap: 10px;
+}
+
+.grid-item {
+  border: 3px solid rgb(236, 230, 230);
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: aquamarine;
+}
+
+.grid-item2 {
+  background-color: rgb(255, 251, 127);
+}
+
+.grid-item3 {
+  background-color: rgb(133, 129, 231);
+  grid-column: 1;
+  grid-row: 2 /span 2;
+}
+
+.grid-item4 {
+  background-color: rgb(188, 208, 201);
+  grid-column: 2;
+  grid-row: 2 /span 2;
+}
+
+.grid-subitem1 {
+  background-color:rgb(210, 113, 223);
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+
+.grid-subitem2 {
+  background-color:lightcoral;
+}
+
+.grid-subitem3 {
+  background-color:rgb(152, 163, 118);
+}
