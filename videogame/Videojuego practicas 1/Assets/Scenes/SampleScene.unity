@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46a768a9e24f844d9cf5e1721b912cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 1179479191}
+  starParticles: {fileID: 1179479196}
   scoreText: {fileID: 1348862150}
 --- !u!1 &1178712080
 GameObject:
@@ -802,14 +802,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -7.533, y: 4.571, z: -40.375}
---- !u!1 &1179479191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3904302792843831460, guid: 01be0717b1edfe242ac1e5a08e6e3974, type: 3}
-  m_PrefabInstance: {fileID: 616664487}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1179479194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8144846295198974315, guid: 01be0717b1edfe242ac1e5a08e6e3974, type: 3}
+  m_PrefabInstance: {fileID: 616664487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1179479196 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2298647042593694878, guid: 01be0717b1edfe242ac1e5a08e6e3974, type: 3}
   m_PrefabInstance: {fileID: 616664487}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1348862148
