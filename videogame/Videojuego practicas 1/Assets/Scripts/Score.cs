@@ -11,6 +11,9 @@ public class Score : MonoBehaviour
     [SerializeField] ParticleSystem starParticles; 
     //[SerializeField] GameObject particles;
     [SerializeField] TMP_Text scoreText;
+    [SerializeField] Bell_movement bell;
+    [SerializeField] ThrowBalls throwballs;
+    [SerializeField] int pointLimit;
     int points;
     // Start is called before the first frame update
     void Start()
@@ -25,5 +28,11 @@ public class Score : MonoBehaviour
         scoreText.text = "Score: " + points;
         starParticles.Emit(15); 
         //Instantiate(particles, transform.position, Quaternion.identity);
+        bell.StartRing();
+
+        if(points == pointLimit){
+            throwballs.Stop();
+            scoreText.text = "Ganaste";
+        }
     } 
 }

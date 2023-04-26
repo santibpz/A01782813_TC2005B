@@ -31,4 +31,9 @@ public class ThrowBalls : MonoBehaviour
         Instantiate(ball, newPos, Quaternion.identity); // quaternion for rotation
 
     }
+
+    public void Stop()
+    {
+        CancelInvoke("CreateBall");
+    }
 }
