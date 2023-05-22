@@ -4,28 +4,6 @@
 USE juegosolimpicos;
 
 --
--- Inserción de datos para la tabla Deportista
---
-
-SET AUTOCOMMIT=0;
-INSERT INTO DEPORTISTA (id_pais, nombre, apellidoPaterno, apellidoMaterno, sexo, numMedallasAcumuladas)  VALUES 
-(3, 'Rodrigo', 'Perez', 'Juarez', 'masculino', 5),
-(2, 'Juan', 'Carlos', 'Soto', 'masculino', 8),
-(1, 'Ian', 'Vazquez', 'Perez', 'masculino', 2),
-(4, 'Santiago', 'Benitez', 'Lopez', 'masculino', 12),
-(1, 'Mateo', 'García', 'Rodríguez', 'masculino', 4),
-(6, 'Isabella', 'Fernández', 'López', 'femenino', 11),
-(7, 'Sebastián', 'López', 'Torres', 'masculino', 21),
-(5, 'Lucía', 'Torres', 'Sánchez', 'femenino', 16),
-(3, 'David', 'Hernández', 'García', 'masculino', 7),
-(9, 'Camila', 'González', 'Martínez', 'femenino', 9),
-(10, 'Javier', 'Sánchez', 'Rodríguez', 'masculino', 1),
-(11, 'Dulce', 'Munguia', 'Areas', 'femenino', 2),
-(15, 'Lucia', 'Martinez', 'Martinez', 'femenino', 10),
-(4, 'Carla', 'Vargas', 'Mendez', 'femenino', 9),
-(14, 'Mario', 'Lopez', 'Marciaga', 'masculino', 4);
-
---
 -- Inserción de datos para la tabla Pais
 --
 
@@ -48,6 +26,54 @@ VALUES
     ('Reino Unido', 30, 9),
     ('Corea del Sur', 21, 7);
     
+
+
+
+--
+-- Inserción de datos para la tabla Deportista
+--
+
+SET AUTOCOMMIT=0;
+INSERT INTO DEPORTISTA (id_pais, nombre, apellidoPaterno, apellidoMaterno, sexo, numMedallasAcumuladas)  VALUES 
+(3, 'Rodrigo', 'Perez', 'Juarez', 'masculino', 5),
+(2, 'Juan', 'Carlos', 'Soto', 'masculino', 8),
+(1, 'Ian', 'Vazquez', 'Perez', 'masculino', 2),
+(4, 'Santiago', 'Benitez', 'Lopez', 'masculino', 12),
+(1, 'Mateo', 'García', 'Rodríguez', 'masculino', 4),
+(6, 'Isabella', 'Fernández', 'López', 'femenino', 11),
+(7, 'Sebastián', 'López', 'Torres', 'masculino', 21),
+(5, 'Lucía', 'Torres', 'Sánchez', 'femenino', 16),
+(3, 'David', 'Hernández', 'García', 'masculino', 7),
+(9, 'Camila', 'González', 'Martínez', 'femenino', 9),
+(10, 'Javier', 'Sánchez', 'Rodríguez', 'masculino', 1),
+(11, 'Dulce', 'Munguia', 'Areas', 'femenino', 2),
+(15, 'Lucia', 'Martinez', 'Martinez', 'femenino', 10),
+(4, 'Carla', 'Vargas', 'Mendez', 'femenino', 9),
+(14, 'Mario', 'Lopez', 'Marciaga', 'masculino', 4);
+
+
+--
+-- Inserción de datos para la tabla Disciplina
+--
+
+SET AUTOCOMMIT=0;
+INSERT INTO DISCIPLINA (nombre, disciplina) VALUES
+    ('100m sprint', 'Atletismo'),
+    ('200m mariposa', 'Natación'),
+    ('3 sets de tenis', 'Tenis'),
+    ('Salto largo', 'Atletismo'),
+    ('50m estilo libre', 'Natación'),
+    ('Ciclismo de montaña', 'Ciclismo'),
+    ('Gimnasia rítmica', 'Gimnasia'),
+    ('Juego por hoyos', 'Golf'),
+    ('Partido Baloncesto', 'Bloncesto'),
+    ('Partido de Volleyball', 'VolleyBall'),
+    ('Lanzamiento de disco', 'Atletismo'),
+    ('Partido Futbol', 'Futbol'),
+    ('Juego a golpes', 'Golf'),
+    ('Salto con garrocha', 'Atletismo'),
+    ('500m pecho', 'Natación');
+
 
 --
 -- Inserción de datos para la tabla Prueba
@@ -72,28 +98,7 @@ VALUES
     (14, '2023-06-02', 'Estadio Olímpico', 100, 'Final', 60),
     (15, '2023-06-03', 'Pista de Patinaje', 80, 'Eliminatoria', 75);
     
-    
---
--- Inserción de datos para la tabla Disciplina
---
 
-SET AUTOCOMMIT=0;
-INSERT INTO DISCIPLINA (nombre, disciplina) VALUES
-    ('100m sprint', 'Atletismo'),
-    ('200m mariposa', 'Natación'),
-    ('3 sets de tenis', 'Tenis'),
-    ('Salto largo', 'Atletismo'),
-    ('50m estilo libre', 'Natación'),
-    ('Ciclismo de montaña', 'Ciclismo'),
-    ('Gimnasia rítmica', 'Gimnasia'),
-    ('Juego por hoyos', 'Golf'),
-    ('Partido Baloncesto', 'Bloncesto'),
-    ('Partido de Volleyball', 'VolleyBall'),
-    ('Lanzamiento de disco', 'Atletismo'),
-    ('Partido Futbol', 'Futbol'),
-    ('Juego a golpes', 'Golf'),
-    ('Salto con garrocha', 'Atletismo'),
-    ('500m pecho', 'Natación');
     
 
 --
